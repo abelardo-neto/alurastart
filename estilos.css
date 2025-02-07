@@ -70,7 +70,12 @@ body {
 
   @media (max-width: 768px) {
     width: 674px;
+    @media (max-width: 425px) {
+      width: 299px;
+    }
   }
+
+  
 }
 
 .cabecalho {
