@@ -53,6 +53,9 @@ h5 {
   font-weight: 700;
 
   @media (max-width: 768px) {
+    @media (max-width: 425px) {
+      font-size: 2.5rem;
+    }
     &:not(h1) {
       font-size: var(--font-size-l);
     }
@@ -98,6 +101,10 @@ body {
   display: flex;
   justify-content: space-between;
   gap: var(--gap-m);
+
+  @media (max-width: 425px) {
+    display: none;     
+  }
 }
 
 .cabecalho__item > a {
@@ -204,6 +211,10 @@ body {
     align-items: center;
     text-align: center;
     padding: 0 5.5rem;
+
+    @media (max-width: 425px) {
+     padding: 0; 
+    }
   }
 }
 
@@ -229,6 +240,11 @@ body {
   @media (max-width: 768px) {
     padding: var(--padding-xl) 0;
     flex-direction: row-reverse;
+
+    @media (max-width: 425px) {
+     flex-direction: column-reverse;
+     gap: var(--gap-l); 
+    }
   }
 }
 
@@ -238,6 +254,11 @@ body {
   flex-direction: column;
   gap: var(--gap-l);
   width: 45%;
+
+  @media (max-width: 425px) {
+   width: 100%;
+   align-items: stretch;   
+  }
 }
 
 .quem-somos__titulo {
@@ -291,11 +312,19 @@ body {
   @media (max-width: 768px) {
     flex-wrap: wrap;
     justify-content: space-around;
+
+    @media (max-width: 425px) {
+     text-align: center; 
+    }
   }
 }
 
 .sobre-nos__beneficios--card {
   width: 33.33%;
+
+  @media (max-width: 425px) {
+   width: 100%;   
+  }
 
   & > h3 {
     font-size: var(--font-size-m);
@@ -375,6 +404,11 @@ body {
   @media not all and (min-width: 768px) {  /* media types e.g. screen, not all*/
     flex: 1 1 50px;
     max-width: 25%;
+
+    @media (max-width: 425px) {
+     max-width: 100%;
+     text-align: center; 
+    }
   }
 }
 
@@ -425,6 +459,10 @@ body {
 
     @media (max-width: 768px) {
       gap: var(--gap-xl);
+
+      @media (max-width: 425px) {
+        text-align: center;
+      }
     }
 
     & > a:hover {
@@ -439,6 +477,11 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: start;
+
+  @media (max-width: 425px) {
+   flex-direction: column;  
+   gap: var(--gap-l); 
+  }
 }
 
 .vantagens__textos {
@@ -447,6 +490,10 @@ body {
   align-items: start;
   width: 40%;
   gap: var(--gap-m);
+
+  @media (max-width: 425px) {
+   width: 100%;   
+  }
 
   & > h2 {
     color: var(--cor-titulo);
@@ -680,6 +727,11 @@ body {
   display: flex;
   gap: var(--gap-xl);
   padding: var(--padding-2xl) 0;
+
+  @media (max-width: 425px) {
+   flex-direction: column;
+   gap: var(--gap-l);   
+  }
 }
 
 .rodape__informacoes {
